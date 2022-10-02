@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+}
+
+/*body header*/
+#body-header{
+/*    height of header image*/
+    height: 65vh;
+    background-image: url(images/header-image1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+/*    blurish effect*/
+    opacity: 0.8;
+    
+/*    backfround parallex effect*/
+    background-attachment: fixed;
+}
+
+
+
+/*Horizontal List*/
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    
+}
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+    
+}
+/*to make it horizontal list*/
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 0px 8px
+    
+}
+
+.horizontal-list a{
+    color: white;
+    text-decoration: none;
+/*    transation delay in color*/
+    transition: color 0.5s, border-bottom 4s;
+}
+
+/*underline when hover*/
+.horizontal-list a:hover{
+    color: lightgray;
+    border-bottom: 1px solid white;
+}
+.text-center{
+    text-align: center;
+}
+
+
+
+
