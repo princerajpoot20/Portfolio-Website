@@ -30,6 +30,7 @@ body{
     list-style: none;
     padding-left: 0px;
     text-align: center;
+    margin: 0px;
     
 }
 /*to make it horizontal list*/
@@ -42,18 +43,101 @@ body{
 .horizontal-list a{
     color: white;
     text-decoration: none;
-/*    transation delay in color*/
+    transation delay in color
+    
+}
+
+.nav-menu{
+/*    we want this transation in navagation menu*/
     transition: color 0.5s, border-bottom 4s;
 }
 
 /*underline when hover*/
-.horizontal-list a:hover{
+.nav-menu li a:hover{
     color: lightgray;
     border-bottom: 1px solid white;
 }
 .text-center{
     text-align: center;
 }
+
+#name-social-container{
+    margin-top: 20vh;
+}
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    
+    
+}
+
+
+.social-icon li a i{
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 50%;
+}
+
+.social-icon li a i:hover{
+/*    to add shadow while hover*/
+    
+/*    1.horizontal offset,+ve indicate shodow to right, 0 equal to left and right ,-ve shadow toward left*/
+/*    2. vertical offset, +ve to bottom,0 for both top and bottom, -ve for top*/
+/*    3.blur, if we want shadow to be blur*/
+/*    4. to spread over area.*/
+/*    5. color*/
+    
+/*    box-shadow: 1,2,3,4,5 values*/
+    box-shadow: 0px 0px 4px 4px rgba(230,196,196,0.3);
+}
+
+
+
+
+/*About Section*/
+
+#about{
+    height: auto;
+    width: 100%;
+    
+/*    to make photo come over header section*/
+    position: relative;
+    
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+    
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
