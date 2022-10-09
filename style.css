@@ -187,7 +187,7 @@ section:nth-child(2n+1){
 .skill-progress{
     width: 7rem;
     height: 1.4rem;
-    background-color: lightgrey;
+    background-color: lightgray;
     border-radius: 0.8rem;
     border: 2px solid black;
     
@@ -220,6 +220,14 @@ section:nth-child(2n+1){
 
 
 /*Percentage classes*/
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+}
+.fifty-five-percent{
+    width: 85%;
+    height: inherit;
+}
 .eighty-five-percent{
     width: 85%;
     height: inherit;
