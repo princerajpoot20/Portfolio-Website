@@ -65,7 +65,7 @@ body{
     margin-top: 20vh;
 }
 #my-name{
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 0.1rem;
     color: white;
     font-weight: 700;
@@ -97,9 +97,53 @@ body{
 
 
 
+/*adding flex*/
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+/*    height: 100vh;*/
+    
+/*    to allign item works cross axis in center*/
+/*    cross axis will be vertical*/
+    align-items: center;
+    
+    
+}
+
+/*    every alternative section is having alternative color*/
+/*to do this*/
+
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+    background-color: white;
+    
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+
+
+
+
 /*About Section*/
 
-#about{
+#about-section{
     height: auto;
     width: 100%;
     
@@ -109,8 +153,8 @@ body{
 }
 
 #my-image{
-    height: 12rem;
-    width: 12rem;
+    height: 18rem;
+    width: 18rem;
     margin: auto;
     margin-top: -17vh;
     
@@ -126,9 +170,60 @@ body{
 
 
 
+/*Skills Section*/
+.skills-display{
+    width: 70%;
+    height: 100px;
+    border: 2px solid black;
+    
+    display: flex;
+    
+/*    to wrap items according to the avaliable space*/
+    flex-wrap: wrap;
+    
+/*    spaces between the items to be equal*/
+    justify-content: space-between;
+}
+.skill-progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+    
+}
+/* > this will only apply to direct child of skill progress*/
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+.skill-name span{
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 10px
+}
 
 
+.mb75px{
+    margin-bottom: 75px;
+}
+.mb-blue{
+    background-color: #2857a4;
+/*
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem
+*/
+}
+.text-highlight{
+    color: #2857a4;
+    font-weight: 600;
+}
 
+
+/*Percentage classes*/
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+}
 
 
 
