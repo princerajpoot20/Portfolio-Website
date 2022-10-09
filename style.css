@@ -6,7 +6,7 @@ body{
 #body-header{
 /*    height of header image*/
     height: 65vh;
-    background-image: url(images/header-image1.jpg);
+    background-image: url(images/header2.JPG);
     background-size: cover;
     background-position: center;
     
@@ -35,6 +35,7 @@ body{
 }
 /*to make it horizontal list*/
 .horizontal-list li{
+    font-size: 1.5rem;
     display: inline-block;
     margin: 0px 8px 0px 8px
     
@@ -311,6 +312,35 @@ section:nth-child(2n+1){
     left:50%
     
 }
+
+@media screen and (max-width: 600px){
+    .timeline-divider{
+    left: 8%;
+    
+    }
+    
+    .timeline-box{
+/*        this important will give the higher periority over any*/
+        left: 12% !important;
+        width: 80%
+    }
+/*
+    .timeline-box:nth-child(2n){
+        left: 12%;
+    }
+*/
+    
+   
+    .timeline-box:nth-child(2n+1)::after{
+        left: -8%;
+    }
+    html{
+        font-size: 15px;
+    }
+    
+    
+}
+
 
 .timeline-traveller{
     position: sticky;
